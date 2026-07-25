@@ -1,0 +1,6 @@
+{
+  "name": "GentleForge",
+  "description": "Website resmi GentleForge, server Minecraft Bedrock Survival Economy dengan dukungan versi terbaru, sistem ekonomi, dan komunitas yang ramah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
