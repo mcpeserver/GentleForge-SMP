@@ -1,4 +1,6 @@
 import { SeoData, DeveloperData } from "../types";
+import logoImg from "../assets/images/gentleforge_logo_1784527991941.jpg";
+import heroBg from "../assets/images/hero_background_1784527978935.jpg";
 
 export function updateSeo(seoData: SeoData, devData?: DeveloperData) {
   if (typeof document === "undefined") return;
@@ -15,13 +17,13 @@ export function updateSeo(seoData: SeoData, devData?: DeveloperData) {
     "og:description": seoData.description,
     "og:type": "website",
     "og:url": seoData.url,
-    "og:image": `${seoData.url}/assets/hero.jpg`,
+    "og:image": heroBg,
     "og:site_name": "GentleForge",
     // Twitter Card
     "twitter:card": "summary_large_image",
     "twitter:title": seoData.title,
     "twitter:description": seoData.description,
-    "twitter:image": `${seoData.url}/assets/hero.jpg`
+    "twitter:image": heroBg
   };
 
   Object.entries(metaTags).forEach(([name, value]) => {
@@ -59,7 +61,7 @@ export function updateSeo(seoData: SeoData, devData?: DeveloperData) {
     "name": "GentleForge",
     "alternateName": "Forge SMP",
     "url": seoData.url,
-    "logo": `${seoData.url}/assets/logo.webp`,
+    "logo": logoImg,
     "contactPoint": devData ? {
       "@type": "ContactPoint",
       "telephone": `+${devData.contact.phone}`,
